@@ -11,10 +11,12 @@ import { FocusScreen } from './04-useRef/FocusScreen'
 import { Layout } from './05-useLayoutEffect/Layout'
 import { MemoHook } from './06-memo/MemoHook'
 import { CallbackHook } from './06-memo/CallbackHook'
+import { Padre } from './07-tarea-memo/Padre'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
+      <Padre></Padre>
       <CallbackHook></CallbackHook>
       <MemoHook></MemoHook>
       <Layout></Layout>

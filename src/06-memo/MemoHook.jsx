@@ -5,7 +5,7 @@ import { useMemo } from "react"
 
 const heavyStuff = (iterationNumber = 100) => {
   for(let i = 0; i < iterationNumber; i++) {
-    console.log(heavyStuff);
+    //console.log(heavyStuff);
   }
 
   return `${iterationNumber} iteraciones realizadas`
