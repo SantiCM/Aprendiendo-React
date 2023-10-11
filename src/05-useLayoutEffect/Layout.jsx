@@ -13,7 +13,7 @@ export const Layout = () => {
   return (
     <>
       <h1>BreankingBad Quotes</h1>
-      <hr />
+      <hr></hr>
 
       {
         isLoanding
