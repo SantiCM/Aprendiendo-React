@@ -1,7 +1,7 @@
 import React from "react";
 import { TodoItem } from "./TodoItem";
 
-export const TodoList = ({todos = [], onDeleteTodo}) => {
+export const TodoList = ({todos = [], onDeleteTodo, onToogleTodo}) => {
 
   return (
 
@@ -9,7 +9,17 @@ export const TodoList = ({todos = [], onDeleteTodo}) => {
     
       {todos.map(todo => (
     
-        <TodoItem key={todo.id} todo={todo} onDeleteTodo={onDeleteTodo}></TodoItem>
+        <TodoItem 
+          
+          key={todo.id} 
+          
+          todo={todo} 
+          
+          onDeleteTodo={onDeleteTodo}
+          
+          onToogleTodo={onToogleTodo}>
+
+        </TodoItem>
       
       ))}
     

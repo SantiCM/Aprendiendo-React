@@ -1,5 +1,5 @@
 
-export const TodoItem = ({ todo }) => {
+export const TodoItem = ({ todo, onDeleteTodo, onToogleTodo }) => {
 
   return (
 
@@ -11,7 +11,15 @@ export const TodoItem = ({ todo }) => {
   
     >
   
-      <span className="align-self-center">{todo.description}</span>
+      <span
+
+        onClick={ () => onToogleTodo(todo.id) }
+
+        className={`align-self-center ${(todo.done) ? "text-decoration-line-through" : ""}`}>
+      
+        {todo.description}
+      
+      </span>
     
       <button onClick={() => onDeleteTodo(todo.id)} className="btn btn-dark">Borrar</button>
     
