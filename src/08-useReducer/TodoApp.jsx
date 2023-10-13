@@ -19,15 +19,14 @@ import { useTodos } from "../Hooks/useTodos";
 
 export const TodoApp = () => {
 
-  const {todos, todosCount, pendingTodosCount, handleRemove, handleToogle, handle} = useTodos()
+  const {todos, todosCount, pendingTodosCount,  handleRemove, handleToogle, handle} = useTodos()
 
   return (
     <>
   
       <h1>
   
-        Todo App: {todosCount} <small>Pendientes: {pendingTodosCount}</small>
-  
+        Todo App: {todosCount}, <small>Pendientes: {pendingTodosCount}</small>
       </h1>
 
       <div className="row">
