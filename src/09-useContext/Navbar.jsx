@@ -8,11 +8,11 @@ return (
   
     <div className="container-fluid">
   
-      {/*<Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/">
   
           UseContext
   
-      </Link>*/}
+      </Link>
 
       <div className="collapse navbar-collapse" id="navbarNav">
   

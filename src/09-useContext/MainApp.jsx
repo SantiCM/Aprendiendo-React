@@ -9,15 +9,11 @@ import { UserProvider } from "./context/UserProvider"
 export const MainApp = () => {
   return (
     <UserProvider>
-      <h1> Main App</h1>
 
       <Navbar></Navbar>
-
+      
       <hr></hr>
-      <hr></hr>
-      <hr></hr>  
-      <hr></hr>
-
+      
       <Routes>
 
         <Route path="/" element={<HomePage></HomePage>}  ></Route>
