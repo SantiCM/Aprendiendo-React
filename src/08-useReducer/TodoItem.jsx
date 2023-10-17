@@ -15,13 +15,15 @@ export const TodoItem = ({ todo, onDeleteTodo, onToogleTodo }) => {
 
         onClick={ () => onToogleTodo(todo.id) }
 
+        aria-label="span"
+
         className={`align-self-center ${(todo.done) ? "text-decoration-line-through" : ""}`}>
       
         {todo.description}
       
       </span>
     
-      <button onClick={() => onDeleteTodo(todo.id)} className="btn btn-dark">Borrar</button>
+      <button aria-label="button" onClick={() => onDeleteTodo(todo.id)} className="btn btn-dark">Borrar</button>
     
     </li>
   

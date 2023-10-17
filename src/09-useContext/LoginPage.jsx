@@ -14,7 +14,7 @@ export const LoginPage = () => {
 
       <hr></hr>
 
-      <pre>
+      <pre aria-label="pre">
 
       {JSON.stringify(user, null, 3)}
 

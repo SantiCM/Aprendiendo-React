@@ -57,7 +57,7 @@ describe('Pruebas en <MultipleCustomHooks></MultipleCustomHooks>', () => {
     
     })
 
-    test('debe de llamar la funciond de incrementar', () => { 
+    test('debe de llamar la funcion de incrementar', () => { 
         
         useFetch.mockReturnValue({
             data: [ { author: "Santi", quote: "Hola mundo" } ],
